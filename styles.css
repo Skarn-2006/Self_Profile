@@ -1,0 +1,129 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #111;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #1a1a1a, #333), url('hero-bg.jpg') no-repeat center/cover;
+}
+
+#hero .hero-layer {
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+
+
+.profile-photo {
+    width: 300px;    
+    height: 300px;   
+    border-radius: 50%; 
+    border: 4px solid #a7f6f3;
+    box-shadow: 0 0 20px #e60073;
+    animation: pulse 3s infinite;
+    object-fit: cover; 
+    margin: 20px 0;    
+}
+
+
+
+#hero .btn {
+    background: #e60073;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#hero .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #e60073;
+}
+
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: #444;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #e60073;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #111;
+    color: #777;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px #e60073;
+    }
+    50% {
+        box-shadow: 0 0 30px #e60073;
+    }
+}
